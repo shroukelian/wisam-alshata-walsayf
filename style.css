@@ -2225,3 +2225,45 @@ details[open] p {
     padding-bottom: calc(25px + env(safe-area-inset-bottom));
   }
 }
+
+/* أرقام التواصل */
+.contact-numbers {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.contact-numbers > div {
+  padding: 16px 20px;
+
+  border: 1px solid var(--line, #e5ddef);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contact-numbers > div:hover {
+  transform: translateY(-3px);
+  border-color: var(--purple, #6c3bea);
+}
+
+.contact-number-label {
+  display: block;
+
+  color: var(--muted, #706780);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-numbers .phone {
+  display: inline-block;
+  margin: 4px 0 0;
+
+  color: var(--purple, #6c3bea);
+  font-size: clamp(27px, 5vw, 38px);
+  line-height: 1.5;
+}
